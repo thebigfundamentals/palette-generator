@@ -1,0 +1,38 @@
+.ColorBox {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 150px;
+    flex-grow: 1;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+.ColorBox:hover {
+    flex-grow: 4;
+}
+
+.ColorBox-ColorName {
+    text-align: center;
+    align-self: flex-end;
+    margin-bottom: 4em;
+    color: white;
+    text-shadow: 1px 1px 2px darkgray;
+}
+
+.ColorBox-ColorName:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .ColorBox {
+        width: 310px;
+        height: 80px;
+    }
+
+    .ColorBox-ColorName {
+        margin-bottom: 50%;
+        margin-top: 50%;
+        align-self: center;
+    }
+}
