@@ -10,5 +10,9 @@ This small project derives from The Modern React Bootcamp's color exercise. Insp
 * Copy the rgb to the clipboard by clicking on the color code
 * Generate a new palette by clicking on the button 
 
+## New feature (11/9/21)
+* Now the color is displayed in HEX, not RGB, to make it easier to copy/apply the generated color
+* The boxes get a little bigger when clicked/hovered for best experience
+
 ## Preview
 ![](preview.gif)
