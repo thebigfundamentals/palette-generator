@@ -1,11 +1,10 @@
 .ColorBox {
     display: flex;
     justify-content: center;
-    height: 250px;
-    width: 150px;
+    height: 100%;
     flex-grow: 1;
     box-sizing: border-box;
-    transition: all 0.2s;
+    transition: all 0.2s ease-in-out;
 }
 
 .ColorBox:hover {
@@ -26,8 +25,12 @@
 
 @media (max-width: 768px) {
     .ColorBox {
-        width: 310px;
-        height: 80px;
+        width: 100%;
+        height: 20%;
+    }
+
+    .ColorBox:hover {
+        transform: scale(1.2)
     }
 
     .ColorBox-ColorName {
