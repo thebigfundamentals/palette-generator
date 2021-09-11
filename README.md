@@ -7,7 +7,7 @@ This small project derives from The Modern React Bootcamp's color exercise. Insp
 
 ## Functionalities
 * Change individual color by clicking on it
-* Copy the rgb to the clipboar by clicking on the color code
+* Copy the rgb to the clipboard by clicking on the color code
 * Generate a new palette by clicking on the button 
 
 ## Preview
