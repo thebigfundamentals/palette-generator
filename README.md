@@ -14,5 +14,8 @@ This small project derives from The Modern React Bootcamp's color exercise. Insp
 * Now the color is displayed in HEX, not RGB, to make it easier to copy/apply the generated color
 * The boxes get a little bigger when clicked/hovered for best experience
 
+## UPDATE! 20/9/21
+I've been working on this app to keep practicing on React; well, now I've finally managed to change things a bit, so the child element (ColorBox) is *stateless*. I think it works a little better that way, and it fits more properly with React best practices.
+
 ## Preview
 ![](preview.gif)
