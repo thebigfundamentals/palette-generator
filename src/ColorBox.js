@@ -17,7 +17,6 @@ class ColorBox extends Component {
     render() {
         const {color, isCopied} = this.props;
         const isLightColor = chroma(color).luminance() >= 0.6;
-        console.log(isLightColor)
         return ( 
             <div className="ColorBox" style={{backgroundColor: color}} onClick={this.handleBoxClick}>
                 <div className={`ColorBox-ColorName ${isLightColor && 'dark-text'}`} onClick={this.handleNameClick}>
