@@ -17,5 +17,8 @@ This small project derives from The Modern React Bootcamp's color exercise. Insp
 ## UPDATE! 20/9/21
 I've been working on this app to keep practicing on React; well, now I've finally managed to change things a bit, so the child element (ColorBox) is *stateless*. I think it works a little better that way, and it fits more properly with React best practices.
 
+## Small update 14/10/21
+Now the hex code has a lighter/darker color based on the background color, using chroma-js library, to make it easier to read
+
 ## Preview
 ![](preview.gif)

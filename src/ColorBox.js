@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import chroma from 'chroma-js';
 import './ColorBox.css';
 
 class ColorBox extends Component {
@@ -13,11 +14,14 @@ class ColorBox extends Component {
         e.stopPropagation();
         this.props.copyColorCode(this.props.id)
     }
-    render() { 
+    render() {
+        const {color, isCopied} = this.props;
+        const isLightColor = chroma(color).luminance() >= 0.6;
+        console.log(isLightColor)
         return ( 
-            <div className="ColorBox" style={{backgroundColor: this.props.color}} onClick={this.handleBoxClick}>
-                <div className="ColorBox-ColorName" onClick={this.handleNameClick}>
-                    {this.props.isCopied ? 'Copied!' : this.props.color}
+            <div className="ColorBox" style={{backgroundColor: color}} onClick={this.handleBoxClick}>
+                <div className={`ColorBox-ColorName ${isLightColor && 'dark-text'}`} onClick={this.handleNameClick}>
+                    {isCopied ? 'Copied!' : color}
                 </div>
             </div>
          );
